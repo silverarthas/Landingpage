@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro • MELASMA</title>
+  <meta name="description" content="Formulario de inscripción al curso de melasma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Ir al inicio">MELASMA • Curso</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="contenidos.html">Contenido</a>
+      <a href="evento.html">Evento</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="promociones.html">Promociones</a>
+      <a class="btn cta" href="registro.html">Inscribirme</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<h1>Registro</h1>
+<form class="form card" action="gracias.html" method="get" aria-describedby="priv">
+  <label>Nombre completo
+    <input required name="nombre" placeholder="Tu nombre">
+  </label>
+  <label>Correo electrónico
+    <input required type="email" name="email" placeholder="tucorreo@dominio.com">
+  </label>
+  <label>WhatsApp (opcional)
+    <input name="whatsapp" placeholder="+57 300 000 0000">
+  </label>
+  <label>¿Cómo te enteraste?
+    <select name="utm">
+      <option>Instagram</option>
+      <option>Facebook</option>
+      <option>WhatsApp</option>
+      <option>Recomendación</option>
+      <option>Otro</option>
+    </select>
+  </label>
+  <button class="btn cta lg" type="submit">Enviar registro</button>
+  <p id="priv" class="meta">Al enviar, aceptas ser contactad@ con información del evento.</p>
+</form>
+<p class="meta">* Integrar luego con tu pasarela de pago preferida.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>2025 De lo básico a lo último: Hiperpigmentaciones cutaneas . Todos los derechos reservados.</p>
+    <nav class="footer-nav" aria-label="Secundario">
+      <a href="faq.html">FAQ</a>
+      <a href="registro.html" class="btn small">Inscribirme</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
