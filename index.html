@@ -84,7 +84,30 @@
     </div>
   </div>
 </section>
-
+<h2>Registro</h2>
+<form class="form card" action="gracias.html" method="get" aria-describedby="priv">
+  <label>Nombre completo
+    <input required name="nombre" placeholder="Tu nombre">
+  </label>
+  <label>Correo electrónico
+    <input required type="email" name="email" placeholder="tucorreo@dominio.com">
+  </label>
+  <label>WhatsApp (opcional)
+    <input name="whatsapp" placeholder="+57 300 000 0000">
+  </label>
+  <label>¿Cómo te enteraste?
+    <select name="utm">
+      <option>Instagram</option>
+      <option>Facebook</option>
+      <option>WhatsApp</option>
+      <option>Recomendación</option>
+      <option>Otro</option>
+    </select>
+  </label>
+  <button class="btn cta lg" type="submit">Enviar registro</button>
+  <p id="priv" class="meta">Al enviar, aceptas ser contactad@ con información del evento.</p>
+</form>
+<p class="meta">* Integrar luego con tu pasarela de pago preferida.</p>
 
 <section>
   <h2>Testimonios</h2>
