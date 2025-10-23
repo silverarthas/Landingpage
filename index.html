@@ -1,143 +1,208 @@
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>De lo basico a lo ultimo: MELASMA</title>
+  <title>Dr Ruben Vargas - Urgencias en estetica</title>
   <meta name="description" content="Curso virtual en vivo sobre melasma con técnicas basadas en evidencia. Inscríbete y asegura tu cupo.">
+
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
+  <!-- =========================
+       HEADER
+       ========================= -->
+  <header class="header">
+    <div class="logo-group">
+      <img class="imagen" src="assets/loto.png" alt="Flor de loto · Logo MELASMA">
+      <span class="logo-text">Dr. Ruben Vargas</span>
+    </div>
 
-<header class="site-header">
-    <a class="brand" href="index.html" aria-label="Ir al inicio">Capitulo: Melasma</a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
-    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
-    <nav class="site-nav" aria-label="Principal">
-      <a href="contenidos.html">Contenido</a>
-      <a href="testimonios.html">Testimonios</a>
-      <a href="promociones.html">Promociones</a>
-      <a class="btn cta" href="registro.html">Inscribirme</a>
+    <nav>
+      <a href="#capitulo" aria-current="page">Urgencias en estetica</a>
+      <a href="#contenido">Contenido</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#info">Promociones</a>
     </nav>
-</header>
 
-<main >
-  <section class="container">
-    <section class="container_sup">
-      <h1>Domina el tratamiento del <span class="highlight">melasma</span></h1>
-      <img class="imagen" src="assets/Melasma.jpg" alt="flyer" style="width: 100%; height: auto;justify-content: center;">
-      <p>De lo básico a lo último, con técnicas <strong>basadas en evidencia</strong>. 100% virtual y en vivo por Zoom.</p>
+    <a class="btn" href="#form">Inscribirme</a>
+  </header>
+
+  <!-- =========================
+       MAIN
+       ========================= -->
+  <main>
+    <!-- HERO -->
+    <section id="capitulo">
+      <img class="imagen" src="assets/flyer.jpeg" alt="Flyer" style="width: 50%; height: auto; display:block; margin:auto;">
     </section>
-    <section class="container_middle">
-      <p class="cm_title"><strong>Incluye</strong></p>
-      <div class="badges">
-        <div class="badges_1">
-          <span class="badge">Certificado digital</span> 
-          <span class="badge">Material PDF</span> 
+
+    <!-- CURSOS (iconos estáticos en cuadrícula) -->
+    <section class="CC" id="cursos">
+      <h2>Cursos relacionados</h2>
+      <div class="cc-static">
+        <div class="cc-card">
+          <a href="laser.html" class="cc-link">
+            <div class="cc-icon">
+              <img class="imagen" src="assets/icon1.png" alt="Láser">
+            </div>
+            <span class="cc-label">Melasma</span>
+          </a>
         </div>
-        <div class="badges_2">
-          <span class="badge">Grabación incluida</span> 
-          <span class="badge">Grupo de WhatsApp</span>
+        <div class="cc-card">
+          <a href="peels.html" class="cc-link">
+            <div class="cc-icon">
+              <img class="imagen" src="assets/icon1.png"alt="Peelings">
+            </div>
+            <span class="cc-label">Acne</span>
+          </a>
+        </div>
+        <div class="cc-card">
+          <a href="topicals.html" class="cc-link">
+            <div class="cc-icon">
+              <img class="imagen" src="assets/icon1.png" alt="Tópicos">
+            </div>
+            <span class="cc-label">Botox</span>
+          </a>
         </div>
       </div>
     </section>
-    <section class="container_inf">
-      <a class="btn cta lg" href="registro.html">Reservar mi cupo<br>Cupos limitados</br></a>
+
+    <!-- =========================
+         CONTENIDO
+         ========================= -->
+    <section class="cont" id="contenido">
+      <h2>Contenido</h2>
+      
+      <div class="cont-inner">
+        <img class="imagen" src="assets/contenido.jpeg" alt="Contenido del curso">
+        <div class="lista">
+          <h3>Anatomía facial</h3>
+          <h4>Lo que aprenderás</h4>
+          <ul class="checklist_items">
+            <li>Definición y clasificación del melasma</li>
+            <li>Tratamientos clásicos: láser, mesoterapia, peelings y más</li>
+            <li>Mitos y verdades: qué funciona y qué no</li>
+            <li>Protocolos efectivos y cuidados postratamiento</li>
+          </ul>
+          <button>Inscríbete</button>
+        </div>
+      </div>
     </section>
-    
-  </section>
-<section class="landinginf">
-  <div class="landinginf_sub1">
-    <ul class="checklist">
+
+    <!-- =========================
+         INFORMACIÓN
+         ========================= -->
+     <!-- INFORMACIÓN -->
+    <section class="info" id="info">
+      <div class="info-grid">
+        <!-- Columna izquierda: Incluye -->
+        <div class="Incluye">
+          <h3>Incluye</h3>
+          <ul class="summary chips">
+            <li><span class="chip">Certificado digital</span></li>
+            <li><span class="chip">Grabación incluida</span></li>
+            <li><span class="chip">Material PDF</span></li>
+            <li><span class="chip">Grupo de WhatsApp</span></li>
+          </ul>
+          <button class="btn-outline-black">Reservar mi cupo · cupos limitados</button>
+        </div>
+
+        <!-- Tarjeta: Información del evento -->
+        <article class="card info-card">
+          <h4>Información del evento</h4>
+          <ul class="info-list">
+            <li>📅 Sábado 20 de septiembre</li>
+            <li>🕗 8:00 a.m. – 1:00 p.m.</li>
+            <li>📍 Virtual en vivo por Zoom</li>
+          </ul>
+          <button class="btn btn-outline">Detalles del evento</button>
+        </article>
+
+        <!-- Tarjeta: Promoción vigente -->
+        <article class="card promo-card">
+          <h4>Promoción vigente</h4>
+          <div class="promo-rows">
+            <p><strong>Valor regular:</strong> $200.000 COP</p>
+            <p><strong>Pronto pago:</strong> $150.000 COP<br><small>(hasta el 1 de septiembre)</small></p>
+            <p><strong>Reserva:</strong> $50.000 COP para asegurar el cupo</p>
+          </div>
+          <button class="btn btn-outline">Ver condiciones</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+         TESTIMONIOS
+         ========================= -->
+    <section class="testimonios" id="testimonios">
+      <h2>Testimonios</h2>
+      <div class="T1">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Testimonio 1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Testimonio 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="testimonios.html">Ver más testimonios</a>
+    </section>
+
+    <!-- =========================
+         FORMULARIO
+         ========================= -->
+    <section class="form" id="form">
+      <h2>Inscripción</h2>
+      <form action="/registro" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="footer">
+    <section class="superior">
+      <div class="Icono_footer">
+        <p>Icono</p>
+        <img class="imagen" src="assets/icono.jpg" alt="Icono footer" style="width: 50%; height: auto; display:block; margin:auto;">
+      </div>
+
       <div>
-        <h2>Lo que aprenderás</h2>
-        <div class="checklist_items">
-        <li>Definición y clasificación del melasma</li>
-        <li>Tratamientos clásicos: láser, mesoterapia, peelings y más</li>
-        <li>Mitos y verdades: qué funciona y qué no</li>
-        <li>Protocolos efectivos y cuidados postratamiento</li>
-        </div>
+        <h3>Secciones</h3>
+        <ul>
+          <li>Memorias</li>
+          <li>Certificado de asistencia</li>
+          <li>Grabación del evento por 1 mes</li>
+          <li>WhatsApp soporte por 1 año</li>
+        </ul>
       </div>
-      <a class="btn" href="contenidos.html">Ver temario completo</a>
-    </ul>
-    <div class="card">
-      <h3>Información del evento</h3>
-      <ul class="summary">
-        <li>📅 Sábado 20 de septiembre</li>
-        <li>🕗 8:00 a.m. – 1:00 p.m.</li>
-        <li>📍 Virtual en vivo por Zoom</li>
-      </ul>
-      <a class="btn outline" href="evento.html">Detalles del evento</a>
-    </div>
-  </div>
-  <div class="landinginf_promocion">
-    <h2>Promoción vigente</h2>
-    <div class="promo callout">
-      <p><strong>Valor regular:</strong> $200.000 COP</p>
-      <p><strong>Pronto pago:</strong> $150.000 COP <em>(hasta el 1 de septiembre)</em></p>
-      <p><strong>Reserva:</strong> $50.000 COP para asegurar el cupo</p>
-     <a class="btn cta" href="promociones.html">Ver condiciones</a>
-    </div>
-  </div>
-</section>
-<h2>Registro</h2>
-<form class="form card" action="gracias.html" method="get" aria-describedby="priv">
-  <label>Nombre completo
-    <input required name="nombre" placeholder="Tu nombre">
-  </label>
-  <label>Correo electrónico
-    <input required type="email" name="email" placeholder="tucorreo@dominio.com">
-  </label>
-  <label>WhatsApp (opcional)
-    <input name="whatsapp" placeholder="+57 300 000 0000">
-  </label>
-  <label>¿Cómo te enteraste?
-    <select name="utm">
-      <option>Instagram</option>
-      <option>Facebook</option>
-      <option>WhatsApp</option>
-      <option>Recomendación</option>
-      <option>Otro</option>
-    </select>
-  </label>
-  <button class="btn cta lg" type="submit">Enviar registro</button>
-  <p id="priv" class="meta">Al enviar, aceptas ser contactad@ con información del evento.</p>
-</form>
-<p class="meta">* Integrar luego con tu pasarela de pago preferida.</p>
 
-<section>
-  <h2>Testimonios</h2>
-  <div class="cards-3">
-    <article class="card">
-      <p>“Optimicé mis tratamientos y mis pacientes notan la diferencia.”</p>
-      <p class="author">— Dra. Andrea López</p>
-    </article>
-    <article class="card">
-      <p>“Contenido claro, aplicable y con respaldo científico.”</p>
-      <p class="author">— Lic. Camila R.</p>
-    </article>
-    <article class="card">
-      <p>“El grupo de WhatsApp me ayudó a resolver casos reales.”</p>
-      <p class="author">— Esteticista J. Martínez</p>
-    </article>
-  </div>
-  <a class="btn" href="testimonios.html">Ver más testimonios</a>
-</section>
-</main>
+      <div class="contacto">
+        <p>Tel: 3147679159</p>
+      </div>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>@2025 De lo básico a lo último: Hiperpigmentaciones cutaneas . Todos los derechos reservados.</p>
-    <nav class="footer-nav" aria-label="Secundario">
-      <a href="faq.html">FAQ</a>
-      <a href="registro.html" class="btn small">Inscribirme</a>
-    </nav>
-  </div>
-</footer>
+      <div class="redes">
+        <p>Redes sociales</p>
+      </div>
+    </section>
 
+    <section class="inferior">
+      <p>©2025 De lo básico a lo último: Hiperpigmentaciones cutáneas. Todos los derechos reservados.</p>
+    </section>
+  </footer>
 </body>
 </html>
