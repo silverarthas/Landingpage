@@ -1,4 +1,4 @@
- /* =========================
+/* =========================
    Variables (ajústalas a tu Figma)
    ========================= */
 :root{
@@ -80,8 +80,9 @@ ul { margin: 0; padding-left: 1.15rem; }
   align-items: center;
   gap: 1rem;
   min-height: var(--hdr-height);
-  padding: 0 var(--hdr-pad-x);
   background: var(--hdr-bg);
+  /* padding horizontal se ajusta con safe-area más abajo */
+  padding: 0 var(--hdr-pad-x);
 }
 .logo-group{
   display: flex;
@@ -169,6 +170,7 @@ ul { margin: 0; padding-left: 1.15rem; }
 /* =========================
    HERO (#capitulo)
    ========================= */
+/* (Si luego usas .hero con fondo, ya está preparado) */
 .hero{
   background-image: var(--hero-bg, url('assets/hero-azul.jpg'));
   background-size: cover;
@@ -332,14 +334,12 @@ ul { margin: 0; padding-left: 1.15rem; }
   text-align: center;
   background-color: rgba(116, 73, 35, 0.08);
 }
-
 .cont > h2 {
   text-align: center;
   font-size: clamp(1.4rem, 2vw, 2rem);
   margin-bottom: var(--space-4);
   width: 100%;
 }
-
 /* Contenedor interno */
 .cont-inner {
   display: flex;
@@ -347,29 +347,26 @@ ul { margin: 0; padding-left: 1.15rem; }
   align-items: center;
   justify-content: center;
   gap: 20px;
-  max-width: 900px;  /* 🔹 Limita el ancho total para que queden más cerca */
-  margin: 0 auto;    /* 🔹 Centra todo el bloque */
+  max-width: 900px;
+  margin: 0 auto;
 }
-
 /* En escritorio: horizontal */
 @media (min-width: 900px) {
   .cont-inner {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* 🔹 mantiene separación real de 20px */
+    gap: 20px;
   }
 }
-
 /* Imagen */
 .cont-inner > .imagen {
   width: 50%;
-  max-width: 420px;  /* 🔹 reduce tamaño visual */
+  max-width: 420px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   flex-shrink: 0;
 }
-
 /* Caja de texto */
 .cont .lista {
   flex: 1;
@@ -380,11 +377,11 @@ ul { margin: 0; padding-left: 1.15rem; }
   padding: var(--space-3);
   text-align: left;
 }
-
 .cont .lista h3 { margin-bottom: .25rem; }
 .cont .lista h4 { margin: 0 0 var(--space-2); color: var(--color-muted); font-weight: 600; }
 .cont .checklist_items li { margin-bottom: .5rem; }
 .cont button { margin-top: .75rem; }
+
 /* =========================
    INFO (Incluye + dos tarjetas)
    ========================= */
@@ -392,7 +389,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   padding: var(--space-5) 0;
   background: #FBFAF8;
 }
-
 .info .info-grid{
   width: 100%;
   max-width: var(--container);
@@ -403,7 +399,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   align-items: start;
   padding: 0 var(--space-2);
 }
-
 /* ---- Columna izquierda (Incluye) ---- */
 .Incluye h3{
   font-family: "Manrope", system-ui, sans-serif;
@@ -412,7 +407,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   color: #744923;
   margin-bottom: 14px;
 }
-
 .chips{
   display: flex;
   flex-wrap: wrap;
@@ -431,7 +425,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   font: 600 13px/1 "Manrope", system-ui, sans-serif;
   box-shadow: 0 1px 0 rgba(0,0,0,.02);
 }
-
 /* ---- Botón estilo "Inscribirme" ---- */
 .btn-outline-black{
   background: transparent;
@@ -451,7 +444,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   background: #744923;
   color: #fff;
 }
-
 /* ---- Tarjetas derechas ---- */
 .card{
   background: #fff;
@@ -460,13 +452,11 @@ ul { margin: 0; padding-left: 1.15rem; }
   box-shadow: 0 8px 24px rgba(2,8,23,.05);
   padding: 16px;
 }
-
 .card h4{
   margin: 0 0 10px;
   font: 700 18px/1.2 "Manrope", system-ui, sans-serif;
   color: #3B2A20;
 }
-
 .info-card .info-list{
   list-style: none;
   padding: 0;
@@ -477,14 +467,12 @@ ul { margin: 0; padding-left: 1.15rem; }
   color: #444;
   font: 500 14px/1.4 "Manrope", system-ui, sans-serif;
 }
-
 .promo-card .promo-rows p{
   margin: 8px 0;
   color: #3f3f3f;
   font: 500 14px/1.5 "Manrope", system-ui, sans-serif;
 }
 .promo-card .promo-rows small{ color:#7a7a7a; }
-
 /* Botones secundarios contorneados */
 .btn-outline{
   background: #fff;
@@ -495,7 +483,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   box-shadow: none;
 }
 .btn-outline:hover{ border-color: #c8b6a7; }
-
 /* ---- Responsive ---- */
 @media (max-width: 1024px){
   .info .info-grid{
@@ -503,7 +490,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   }
   .card{ padding: 14px; }
 }
-
 @media (max-width: 720px){
   .info .info-grid{
     grid-template-columns: 1fr;
@@ -512,13 +498,11 @@ ul { margin: 0; padding-left: 1.15rem; }
   .btn-outline-black{ width: 100%; }
 }
 
-
-/* ===== TESTIMONIOS (videos o tarjetas sobre fondo gris claro) ===== */
+/* ===== TESTIMONIOS ===== */
 .testimonios{
   padding: var(--space-5) 0;
   background: #D9D9D9; /* color solicitado */
 }
-
 .testimonios h2{
   text-align: center;
   font-family: "Manrope", system-ui, sans-serif;
@@ -527,8 +511,7 @@ ul { margin: 0; padding-left: 1.15rem; }
   color: #3b2a20;
   margin-bottom: var(--space-3);
 }
-
-/* Contenedor de videos o testimonios */
+/* Contenedor de videos/testimonios */
 .testimonios .T1{
   width: 100%;
   max-width: var(--container);
@@ -537,7 +520,6 @@ ul { margin: 0; padding-left: 1.15rem; }
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
-
 /* Videos o tarjetas */
 .testimonios .T1 iframe,
 .testimonios .T1 .t-card{
@@ -545,12 +527,11 @@ ul { margin: 0; padding-left: 1.15rem; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-
-/* Botón inferior en Testimonios — centrado real */
+/* Botón inferior */
 .testimonios .btn{
-  display: block;           /* convierte en bloque */
-  width: fit-content;       /* se ajusta al contenido */
-  margin: 0 auto;           /* centra horizontalmente */
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   background: #fff;
   color: #744923;
   border: 2px solid #744923;
@@ -563,15 +544,13 @@ ul { margin: 0; padding-left: 1.15rem; }
   transition: all 0.2s ease;
   text-align: center;
 }
-
 .testimonios .btn:hover{
   background: #744923;
   color: #fff;
 }
 
-
 /* =========================
-   FORMULARIO (.form)
+   FORMULARIO
    ========================= */
 .form{ padding: var(--space-5) 0; }
 .form h2{ text-align: center; margin-bottom: var(--space-3); }
@@ -601,7 +580,7 @@ ul { margin: 0; padding-left: 1.15rem; }
 }
 
 /* =========================
-   FOOTER (.footer)
+   FOOTER
    ========================= */
 .footer{
   border-top: 1px solid var(--color-border);
@@ -635,3 +614,87 @@ ul { margin: 0; padding-left: 1.15rem; }
   outline-offset: 2px;
 }
 main > *{ scroll-margin-top: 100px; }
+
+/* =============================================================
+   iPhone-first responsive tweaks (safe-area, sizing, wrapping)
+   ============================================================= */
+
+/* Evitar scroll horizontal en iPhone angosto */
+html, body { overflow-x: hidden; }
+
+/* Safe area iOS para el header sticky */
+.header {
+  padding-left: max(var(--hdr-pad-x), env(safe-area-inset-left));
+  padding-right: max(var(--hdr-pad-x), env(safe-area-inset-right));
+}
+
+/* Nav deslizable en móviles */
+@media (max-width: 600px){
+  .header nav{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding-bottom: 6px;
+    margin-inline: -16px; /* edge-to-edge */
+    padding-inline: 16px;
+  }
+  .header nav::-webkit-scrollbar{ display: none; }
+}
+
+/* Reducir densidad del header en iPhones pequeños */
+@media (max-width: 420px){
+  :root{
+    --hdr-gap: 14px;      /* menos separación en nav */
+    --hdr-height: 72px;   /* header más compacto */
+  }
+  .logo-group .logo-text{ font-size: 20px; }
+  .header .btn{ font-size: 15px; padding: 8px 12px; }
+  .header nav a{ font-size: 16px; padding-bottom: 6px; }
+}
+
+/* Botones a ancho completo en móvil dentro de cards/forms */
+@media (max-width: 600px){
+  .info .btn,
+  .info .btn-outline,
+  .form button,
+  .form .btn,
+  .header .btn { width: 100%; text-align: center; }
+}
+
+/* HERO más compacto en móviles */
+@media (max-width: 480px){
+  .hero{ min-height: 48vh; padding: 28px 14px; }
+}
+
+/* Contenido: imagen 100% y caja full width en móvil */
+@media (max-width: 899px){
+  .cont-inner > .imagen{ width: 100%; max-width: 520px; }
+  .cont .lista{ width: 100%; }
+}
+
+/* Cursos: gaps y tamaños más contenidos en iPhone */
+@media (max-width: 480px){
+  .cc-static{ gap: 18px; }
+  .cc-static .cc-icon{ width: 84px; height: 84px; }
+  .cc-static .cc-icon .imagen{ width: 52px; height: 52px; }
+}
+
+/* Testimonios: gaps más pequeños apilados */
+@media (max-width: 480px){
+  .testimonios .T1{ gap: 16px; }
+}
+
+/* Form: padding cómodo en móviles */
+@media (max-width: 480px){
+  .form form{ padding: 14px; }
+}
+
+/* Footer: padding cómodo en móviles */
+@media (max-width: 480px){
+  .footer .superior{ padding: 24px 16px; }
+}
+
+/* Tap targets adecuados en touch */
+@media (hover: none){
+  a, button{ min-height: 44px; }
+}

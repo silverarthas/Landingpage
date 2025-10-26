@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr Ruben Vargas - Urgencias en estetica</title>
-  <meta name="description" content="Curso virtual en vivo sobre melasma con técnicas basadas en evidencia. Inscríbete y asegura tu cupo.">
+  <title>Dr. Rubén Vargas – Urgencias en estética</title>
+  <meta name="description" content="Curso virtual en vivo sobre urgencias en estética con enfoque práctico y basado en evidencia. Inscríbete y asegura tu cupo.">
 
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +17,19 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar al contenido</a>
+
   <!-- =========================
        HEADER
        ========================= -->
   <header class="header">
     <div class="logo-group">
-      <img class="imagen" src="assets/Loto.png" alt="Flor de loto · Logo MELASMA">
-      <span class="logo-text">Dr. Ruben Vargas</span>
+      <img class="imagen" src="assets/loto.png" alt="Flor de loto · Logo MELASMA">
+      <span class="logo-text">Dr. Rubén Vargas</span>
     </div>
 
     <nav>
-      <a href="#capitulo" aria-current="page">Urgencias en estetica</a>
+      <a href="#capitulo" aria-current="page">Urgencias en estética</a>
       <a href="#contenido">Contenido</a>
       <a href="#testimonios">Testimonios</a>
       <a href="#info">Promociones</a>
@@ -38,10 +41,10 @@
   <!-- =========================
        MAIN
        ========================= -->
-  <main>
+  <main id="main">
     <!-- HERO -->
     <section id="capitulo">
-      <img class="imagen" src="assets/flyer.jpeg" alt="Flyer" style="width: 50%; height: auto; display:block; margin:auto;">
+      <img class="imagen" src="assets/flyer.jpeg" alt="Flyer del curso Urgencias en estética" loading="lazy" style="max-width: 900px; width: 100%; height: auto; display: block; margin: 0 auto;">
     </section>
 
     <!-- CURSOS (iconos estáticos en cuadrícula) -->
@@ -51,7 +54,7 @@
         <div class="cc-card">
           <a href="laser.html" class="cc-link">
             <div class="cc-icon">
-              <img class="imagen" src="assets/icon1.png" alt="Láser">
+              <img class="imagen" src="assets/icon1.png" alt="Láser" loading="lazy">
             </div>
             <span class="cc-label">Melasma</span>
           </a>
@@ -59,15 +62,15 @@
         <div class="cc-card">
           <a href="peels.html" class="cc-link">
             <div class="cc-icon">
-              <img class="imagen" src="assets/icon1.png"alt="Peelings">
+              <img class="imagen" src="assets/icon1.png" alt="Peelings" loading="lazy">
             </div>
-            <span class="cc-label">Acne</span>
+            <span class="cc-label">Acné</span>
           </a>
         </div>
         <div class="cc-card">
           <a href="topicals.html" class="cc-link">
             <div class="cc-icon">
-              <img class="imagen" src="assets/icon1.png" alt="Tópicos">
+              <img class="imagen" src="assets/icon1.png" alt="Tópicos" loading="lazy">
             </div>
             <span class="cc-label">Botox</span>
           </a>
@@ -82,7 +85,7 @@
       <h2>Contenido</h2>
       
       <div class="cont-inner">
-        <img class="imagen" src="assets/contenido.jpeg" alt="Contenido del curso">
+        <img class="imagen" src="assets/contenido.jpeg" alt="Contenido del curso" loading="lazy">
         <div class="lista">
           <h3>Anatomía facial</h3>
           <h4>Lo que aprenderás</h4>
@@ -92,7 +95,7 @@
             <li>Mitos y verdades: qué funciona y qué no</li>
             <li>Protocolos efectivos y cuidados postratamiento</li>
           </ul>
-          <button>Inscríbete</button>
+          <a class="btn" href="#form">Inscríbete</a>
         </div>
       </div>
     </section>
@@ -100,7 +103,6 @@
     <!-- =========================
          INFORMACIÓN
          ========================= -->
-     <!-- INFORMACIÓN -->
     <section class="info" id="info">
       <div class="info-grid">
         <!-- Columna izquierda: Incluye -->
@@ -112,7 +114,7 @@
             <li><span class="chip">Material PDF</span></li>
             <li><span class="chip">Grupo de WhatsApp</span></li>
           </ul>
-          <button class="btn-outline-black">Reservar mi cupo · cupos limitados</button>
+          <a class="btn" href="#form">Reservar mi cupo · cupos limitados</a>
         </div>
 
         <!-- Tarjeta: Información del evento -->
@@ -123,7 +125,7 @@
             <li>🕗 8:00 a.m. – 1:00 p.m.</li>
             <li>📍 Virtual en vivo por Zoom</li>
           </ul>
-          <button class="btn btn-outline">Detalles del evento</button>
+          <a class="btn btn-outline" href="#info">Detalles del evento</a>
         </article>
 
         <!-- Tarjeta: Promoción vigente -->
@@ -134,7 +136,7 @@
             <p><strong>Pronto pago:</strong> $150.000 COP<br><small>(hasta el 1 de septiembre)</small></p>
             <p><strong>Reserva:</strong> $50.000 COP para asegurar el cupo</p>
           </div>
-          <button class="btn btn-outline">Ver condiciones</button>
+          <a class="btn btn-outline" href="#info">Ver condiciones</a>
         </article>
       </div>
     </section>
@@ -145,8 +147,12 @@
     <section class="testimonios" id="testimonios">
       <h2>Testimonios</h2>
       <div class="T1">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Testimonio 1" frameborder="0" allowfullscreen></iframe>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Testimonio 2" frameborder="0" allowfullscreen></iframe>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Testimonio 1" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin-top:16px;">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Testimonio 2" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
       </div>
       <a class="btn" href="testimonios.html">Ver más testimonios</a>
     </section>
@@ -166,7 +172,7 @@
         <label for="telefono">Teléfono</label>
         <input type="tel" id="telefono" name="telefono">
 
-        <button type="submit">Enviar</button>
+        <button type="submit" aria-label="Enviar inscripción">Enviar</button>
       </form>
     </section>
   </main>
@@ -178,7 +184,7 @@
     <section class="superior">
       <div class="Icono_footer">
         <p>Icono</p>
-        <img class="imagen" src="assets/icono.jpg" alt="Icono footer" style="width: 50%; height: auto; display:block; margin:auto;">
+        <img class="imagen" src="assets/icono.jpg" alt="Icono del pie de página" loading="lazy" style="width: 50%; height: auto; display:block; margin:auto;">
       </div>
 
       <div>
@@ -192,7 +198,7 @@
       </div>
 
       <div class="contacto">
-        <p>Tel: 3147679159</p>
+        <p>Tel: <a href="tel:+573147679159">+57 314 767 9159</a></p>
       </div>
 
       <div class="redes">
